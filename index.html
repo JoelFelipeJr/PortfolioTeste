@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <section class="banner">
+      <header>
+        <a href="#" class="logo"><span>Meu</span>Website</a>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Trabalho</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <h3>Olá</h3>
+        <h2>Eu sou <span id="text"></span></h2>
+        <p>
+            Bacharel em Direito pela Faculdade de Ciências Sociais Aplicadas - UNIFACISA. Atualmente exerce a função de assessora jurídica na PGM - Procuradoria Geral do Município de Campina Grande. Secretária da Comissão de Investigação de recebimento do Auxílio Emergencial, instaurada pelo Ministério Público Federal (MPF). Membro da Comissão de Direito Imobiliário e Urbanístico da Ordem de Advogados do Brasil - Paraíba. Foi estagiária no Tribunal de Justiça da Paraíba no período de fevereiro de 2020 até dezembro do mesmo ano. Foi estagiária no escritório Rocha, Marinho e Sales de julho de 2018 à abril de 2019. Tem experiência na área de Direito, com ênfase em Administrativo Municipal e Direito Urbanístico. Prática em emissão de parecer. Atuação na área de Violência Doméstica.
+        </p>
+        <button>Contrate-me</button>
+        <button class="chat">
+          <ion-icon name="chatbubbles-outline"></ion-icon> Vamos Conversar
+        </button>
+      </div>
+      <img src="colors.png" class="colors" />
+      <img src="yasmin.png" class="yasmin" />
+      <ul class="sci">
+        <li>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+      </ul>
+      <div class="dayNight">
+        <ion-icon name="moon-outline"></ion-icon>
+        <ion-icon name="sunny-outline"></ion-icon>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      let typingText = new Typed("#text", {
+        strings: ["Yasmin", "Advogada"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1000,
+      });
+    </script>
+
+    <script>
+      let banner = document.querySelector(".banner");
+      let dayNight = document.querySelector(".dayNight");
+      dayNight.onclick = function () {
+        banner.classList.toggle("night");
+      };
+    </script>
+  </body>
+</html>
