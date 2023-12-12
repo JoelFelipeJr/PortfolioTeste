@@ -204,15 +204,15 @@ header ul li a {
     }
 }
 
-.yasmin {
+.Ellen {
     position: absolute;
     right: 100px;
     bottom: 0;
     max-height: 85vh;
-    animation: animateYasmin 8s ease-in-out infinite;
+    animation: animateEllen 8s ease-in-out infinite;
 }
 
-@keyframes animateYasmin {
+@keyframes animateEllen{
     0%, 100% {
         transform: translateX(0px);
     }
