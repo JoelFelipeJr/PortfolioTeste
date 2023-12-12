@@ -39,7 +39,7 @@ header .logo {
 }
 
 header .logo span {
-    color: rgb(195, 0, 255);
+    color: rgb(0, 110, 255);
 }
 
 header ul {
@@ -80,7 +80,7 @@ header ul li a {
 }
 
 .content h2 span {
-    color: rgb(195, 0, 255)
+    color: rgb(0, 110, 255)
 }
 
 .content p {
@@ -92,7 +92,7 @@ header ul li a {
 
 .content button {
     position: relative;
-    background: #7116e97e;
+    background: rgb(0, 110, 255);
     color: #fff;
     border: none;
     outline: none;
@@ -113,7 +113,7 @@ header ul li a {
 
 .content button.chat ion-icon {
     position: relative;
-    color: rgb(195, 0, 255);
+    color: rgb(0, 110, 255);
     font-size: 1.1em;
     top: 5px;
 }
@@ -136,7 +136,7 @@ header ul li a {
 }
 
 .sci li a:hover {
-    color: rgb(195, 0, 255)
+    color: rgb(0, 94, 255)
 }
 
 .dayNight {
@@ -184,7 +184,7 @@ header ul li a {
 }
 
 .banner.night .sci li a:hover {
-    color: rgb(195, 0, 255)
+    color: rgb(0, 132, 255)
 }
 
 .colors {
@@ -204,20 +204,74 @@ header ul li a {
     }
 }
 
-.Ellen {
+.joel {
     position: absolute;
     right: 100px;
     bottom: 0;
     max-height: 85vh;
-    animation: animateEllen 8s ease-in-out infinite;
+    animation: animateJoel 8s ease-in-out infinite;
 }
 
-@keyframes animateEllen{
+@keyframes animateJoel {
     0%, 100% {
         transform: translateX(0px);
     }
 
     50% {
         transform: translateX(-50px);
+    }
+}
+
+/* Adiciona estilo para dispositivos menores (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        /* Centralizar o conteúdo */
+        background-color: #3498db;
+        /* Fundo azul */
+        color: #fff;
+        /* Cor do texto branca */
+        padding: 15px;
+        /* Adiciona algum espaçamento interno ao header */
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    li {
+        margin-right: 0;
+        /* Remover a margem direita dos itens do menu */
+    }
+
+    .logo {
+        font-size: 1.2em;
+        /* Reduzir o tamanho da fonte do logo */
+    }
+
+    button {
+        font-size: 0.8em;
+        /* Reduzir o tamanho da fonte dos botões */
+    }
+
+    .colors {
+        display: block;
+        margin: 0 auto;
+        /* Centralizar a imagem */
+        width: 500px;
+    }
+
+    .joel,
+    .sci {
+        display: none;
+        /* Remover a foto e os ícones de mídia social em dispositivos móveis */
+    }
+
+    .dayNight {
+        top: auto;
+        bottom: 20px;
+        font-size: 1.2em;
+        /* Reduzir o tamanho da fonte dos ícones de day/night */
     }
 }
